@@ -31,12 +31,12 @@ namespace EF6MySQLDemo
 
                         Console.WriteLine("3 cars were added");
 
-                        printCars(context);
+                        PrintCars(context);
                     }
                 }
                 else
                 {
-                    printCars(context);
+                    PrintCars(context);
                 }
 
             }
@@ -45,7 +45,7 @@ namespace EF6MySQLDemo
             Console.ReadKey();
         }
 
-        private static void printCars(ModelContext context)
+        private static void PrintCars(ModelContext context)
         {
             foreach (var car in context.Cars)
             {
